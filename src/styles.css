@@ -97,7 +97,7 @@ a { color: inherit; text-decoration: none; }
 .empty-state { padding: 15vh 0; color: var(--muted); }
 
 /* About */
-.about-page { position: relative; display: grid; min-height: calc(100vh - 92px); padding-block: clamp(7rem,13vw,12rem); grid-template-columns: minmax(230px,.55fr) minmax(0,1fr); gap: clamp(5rem,12vw,13rem); align-items: start; }
+.about-page { position: relative; display: grid; min-height: calc(100vh - 92px); padding: clamp(2.5rem,5vw,4.5rem) 0 clamp(7rem,12vw,11rem); grid-template-columns: minmax(230px,.55fr) minmax(0,1fr); gap: clamp(5rem,12vw,13rem); align-items: start; }
 .about-title { position: sticky; top: 4rem; }
 .about-title h1 { margin: 0; font-family: var(--serif); font-size: clamp(2.4rem,4vw,4rem); font-weight: 500; letter-spacing: -.055em; line-height: 1.18; }
 .about-place { margin-top: 1.5rem; color: var(--muted); font-family: ui-monospace,monospace; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
@@ -149,7 +149,7 @@ a { color: inherit; text-decoration: none; }
   .project-description { max-width: none; }
   .art-stream { gap: 4.5rem; }
   .timeline-group { gap: 3.5rem; }
-  .about-page { display: block; padding-top: 5rem; }
+  .about-page { display: block; padding-top: 3rem; }
   .about-title { position: relative; top: auto; }
   .about-story { padding-top: 2rem; }
 }
