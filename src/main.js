@@ -1,5 +1,25 @@
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+document.querySelectorAll('[data-typewriter]').forEach((line) => {
+  const output = line.querySelector('[data-typewriter-output]');
+  const message = line.dataset.typewriter || '';
+  if (!output) return;
+
+  if (reducedMotion) {
+    output.textContent = message;
+    return;
+  }
+
+  output.textContent = '';
+  let character = 0;
+  const typeCharacter = () => {
+    character += 1;
+    output.textContent = message.slice(0, character);
+    if (character < message.length) window.setTimeout(typeCharacter, 82);
+  };
+  window.setTimeout(typeCharacter, 850);
+});
+
 if (reducedMotion || !('IntersectionObserver' in window)) {
   document.querySelectorAll('[data-reveal]').forEach((element) => element.classList.add('is-visible'));
 } else {

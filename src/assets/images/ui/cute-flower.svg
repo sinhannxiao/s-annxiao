@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <mask id="flower-cut">
+      <rect width="24" height="24" fill="white"/>
+      <circle cx="12" cy="12" r="2.15" fill="black"/>
+    </mask>
+  </defs>
+  <g fill="black" mask="url(#flower-cut)">
+    <ellipse cx="12" cy="6.2" rx="3.35" ry="4.85"/>
+    <ellipse cx="12" cy="6.2" rx="3.5" ry="4.6" transform="rotate(72 12 12)"/>
+    <ellipse cx="12" cy="6.2" rx="3.25" ry="4.8" transform="rotate(144 12 12)"/>
+    <ellipse cx="12" cy="6.2" rx="3.45" ry="4.65" transform="rotate(216 12 12)"/>
+    <ellipse cx="12" cy="6.2" rx="3.3" ry="4.75" transform="rotate(288 12 12)"/>
+  </g>
+</svg>
