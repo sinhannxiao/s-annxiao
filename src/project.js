@@ -15,7 +15,7 @@ function imageCount(data) {
 }
 
 function createArtwork(item, folder, index) {
-  const [filename, caption] = item;
+  const [filename, caption, options = {}] = item;
   const figure = document.createElement('figure');
   figure.className = 'art-item';
 
@@ -25,6 +25,11 @@ function createArtwork(item, folder, index) {
   image.loading = index < 2 ? 'eager' : 'lazy';
   image.decoding = 'async';
   image.addEventListener('load', () => {
+    if (options.maxWidth) {
+      image.classList.add('native-size-art');
+      image.style.maxWidth = `${Math.min(options.maxWidth, image.naturalWidth)}px`;
+      return;
+    }
     // Small character stickers should keep their intended physical scale instead
     // of being enlarged to the full gallery column and becoming visibly soft.
     if (image.naturalWidth < 900) {

@@ -10,7 +10,8 @@ window.PORTFOLIO_COLLECTIONS = {
       ['參茶正面.png', '參茶'],
       ['有夢正面.png', '有夢'],
       ['玉香金正面.png', '玉香金'],
-      ['酒吧正面.png', '勝豐吧 Home Bar']
+      ['酒吧正面.png', '勝豐吧 Home Bar'],
+      ['出展商品照3.JPG', '鹿港街屋明信片']
     ]
   },
   coffee: {
@@ -28,11 +29,14 @@ window.PORTFOLIO_COLLECTIONS = {
       ['麵茶海報.png', '麵茶海報'],
       ['tea.png', '麵茶包裝'],
       ['teaig.png', '麵茶社群視覺'],
-      ['食茶濾掛F.png', '食茶濾掛'],
       ['po1.png', '系列海報'],
       ['出展商品照4jpeg.jpeg', '出展商品照'],
-      ['IMG_4674.JPG', '出展紀錄 01'],
-      ['IMG_4676.JPG', '出展紀錄 02']
+      ['食茶濾掛F.png', '食茶濾掛'],
+      ['IMG_4674.JPG', '實體咖啡濾掛背面'],
+      ['IMG_4676.JPG', '實體咖啡濾掛正面'],
+      ['手沖豆卡.jpg', '手沖豆卡'],
+      ['梅啡色舞飲品海報.jpg', '梅啡色舞飲品海報'],
+      ['薑泥飲品海報.jpg', '薑泥飲品海報']
     ]
   },
   'new-year': {
@@ -50,7 +54,12 @@ window.PORTFOLIO_COLLECTIONS = {
       {
         label: '蛇年 · 2025',
         items: [
-          ['12x12蛇年春聯.png', '12×12 蛇年春聯'], ['______.jpg', '蛇年春聯'], ['出展商品照2.png', '蛇年出展商品照'], ['IMG_1743147227498.jpeg', '蛇年春聯陳列']
+          ['12x12蛇年春聯.png', '12×12 蛇年春聯'],
+          ['2025四.png', '2025 四字春聯'],
+          ['2025年曆.jpg', '2025 年曆'],
+          ['______.jpg', '蛇年紀念 T-shirt 正面', { maxWidth: 720 }],
+          ['出展商品照2.png', '蛇年紀念 T-shirt 反面', { maxWidth: 720 }],
+          ['IMG_1743147227498.jpeg', '紀念衣實體陳列']
         ]
       },
       {
@@ -98,6 +107,19 @@ window.PORTFOLIO_COLLECTIONS = {
       ['忠信市集2.jpeg', '忠信市集 02'],
       ['洛津有夢寄賣.jpeg', '洛津有夢寄賣'],
       ['馬厝祭.JPG', '馬厝祭']
+    ]
+  },
+  collaboration: {
+    number: '06',
+    title: '合作企劃',
+    description: '與品牌及創作者共同完成的識別、名片與延伸視覺。',
+    folder: 'collaboration',
+    items: [
+      ['Mockup1.png', 'Lazyprod 名片設計'],
+      ['ig.jpg', 'Lazyprod 名片正面'],
+      ['igw2.jpg', 'Lazyprod 名片反面'],
+      ['名片正面.png', '小安同學名片正面'],
+      ['名片反面.png', '小安同學名片反面']
     ]
   }
 };
